@@ -1,4 +1,5 @@
 # asana_stylish
+
 Greasemonkey userscript to fix Asana's hidden project tasks list with custom CSS (e.g. Stylish) applied
 
 # What's this for
@@ -10,3 +11,13 @@ Since Asana's support is being a dick and they never solve their customers' prob
 # How to use
 
 Just add this userscript to your Greasemonkey / Scriptish / whatever user script engine you're using and it'll solve all the issues.
+
+# Alternative solution
+
+Add this selector to your custom CSS:
+
+```css
+.react-mount-node .DragLayer {
+    display: none;
+}
+```
